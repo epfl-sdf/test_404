@@ -25,13 +25,13 @@ prefix=$timestamp"_"$(echo $1 | cut -d'/' -f 2)
 rm -f $prefix"_ok.txt" $prefix"_ko.txt"
 
 nblines=0
-while read site_url_jahia url_wwp url_server_wwp site_title username_viewer pwd_viewer
+while read site_url_jahia url_wwp url_server_wwp site_title
 
 do
 	echo $nblines
 	if [ $nblines != "0" ]
 	then
-		./aspi.sh $site_title $prefix
+		./aspi.sh $url_wwp $prefix
 	fi
 	((nblines+=1))
 	echo ""

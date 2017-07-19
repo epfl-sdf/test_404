@@ -15,18 +15,19 @@ fi
 
 echo ---------- start aspi.sh
 
-server="test-web-wordpress.epfl.ch"
-site_name=$1
-url="/v1-testwp/"$1
-site="http://"$server$url
+#server="test-web-wordpress.epfl.ch"
+#site_name=$1
+#url="/v1-testwp/"$1
+#site="http://"$server$url
+site=$1
 output_prefix=$2
 
 echo $1
-echo ""
-echo $server$url
-echo $server$url".html"
-echo ""
-echo $site
+#echo ""
+#echo $server$url
+#echo $server$url".html"
+#echo ""
+#echo $site
 
 # access home page with authenticated cookies
 if [[ $(wget -O- $site 2>&1 | grep "ERROR 404") ]]; then
