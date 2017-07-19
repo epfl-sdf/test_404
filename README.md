@@ -1,5 +1,5 @@
 # Verificateur de 404
-Verificateur de URL pour savoir si elles donnent une erreure 404.
+Verificateur de URL pour savoir si elles donnent une erreur 404.
 
 # Utilisation
 

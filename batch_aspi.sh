@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#petit script pour vérifier si des pages donnent une erreure 404 
+#petit script pour vérifier si des pages donnent une erreur 404 
 #zf170719.1621
 #source: https://www.cyberciti.biz/faq/unix-linux-bash-read-comma-separated-cvsfile/
 

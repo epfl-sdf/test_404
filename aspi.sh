@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Petit script pour verifier si un site donne une erreure 404
+#Petit script pour verifier si un site donne une erreur 404
 #zf170719.1622
 #source: https://stackoverflow.com/questions/22614331/authenticate-on-wordpress-with-wget
 
