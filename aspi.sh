@@ -9,7 +9,7 @@
 #test si l'argument est vide
 if [ -z "$1" ]
   then
-    echo -e "\nSyntax: ./aspi.sh site_name \n\n"
+    echo -e "\nSyntax: ./aspi.sh site_name output_prefix \n\n"
     exit
 fi
 
@@ -19,6 +19,7 @@ server="test-web-wordpress.epfl.ch"
 site_name=$1
 url="/v1-testwp/"$1
 site="http://"$server$url
+output_prefix=$2
 
 echo $1
 echo ""
@@ -29,9 +30,9 @@ echo $site
 
 # access home page with authenticated cookies
 if [[ $(wget -O- $site 2>&1 | grep "ERROR 404") ]]; then
-    echo $site >> ko.txt
+    echo $site >> $output_prefix"_ko.txt"
 else
-    echo $site >> ok.txt
+    echo $site >> $output_prefix"_ok.txt"
 fi
 
 #echo -e "
